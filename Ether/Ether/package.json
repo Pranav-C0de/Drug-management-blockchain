@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "ether": "^0.0.9",
+    "ethers": "^5.7.2",
+    "formidable": "^3.2.5"
+  }
+}

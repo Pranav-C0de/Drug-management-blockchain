@@ -1,0 +1,38 @@
+<html>
+    <title>Prescription / User Status</title>
+    <body>
+     <h1>Prescription / User Status</h1>
+    </body>
+</html>
+<html>
+  <head>
+    <title>User Details</title>
+  </head>
+  <body>
+    <h1>User Details</h1>
+    <form>
+      <label for="userid">Enter Prescription / Patient ID:</label>
+      <input type="text" id="userid" name="userid">
+      <button type="button" onclick="getUserDetails()">Get Details</button>
+    </form>
+    <div id="userdetails">
+      <!-- User details will be displayed here -->
+    </div>
+    <script>
+      function getUserDetails() {
+        // Get the user ID from the input field
+        var userId = document.getElementById("userid").value;
+        
+        // TODO: Use AJAX to retrieve user details from the server
+        // and update the userdetails div with the retrieved information
+        
+        // For now, we'll just display a dummy message
+        var userDetails = "<p>ID: " + userId + "</p>" +
+                           "<p>Name: Details to be taken from the blockchain record</p>" +
+                           "<p>Age: Details to be taken from the blockchain record</p>" +
+                           "<p>Prescription: Details to be taken from the blockchain record</p>";
+        document.getElementById("userdetails").innerHTML = userDetails;
+      }
+    </script>
+  </body>
+</html>
